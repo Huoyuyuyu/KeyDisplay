@@ -1,0 +1,99 @@
+{
+    "model": {
+        "type": "composite",
+        "models": [
+            {
+                "type": "condition",
+                "property":"keybind_down",
+                "keybind":"key.attack",
+                "on_true": {
+                    "type": "model",
+                    "model": "cps:lmb1"
+                },
+                "on_false": {
+                    "type": "model",
+                    "model": "cps:lmb0"
+                }
+            },
+            {
+                "type": "condition",
+                "property":"keybind_down",
+                "keybind":"key.use",
+                "on_true": {
+                    "type": "model",
+                    "model": "cps:rmb1"
+                },
+                "on_false": {
+                    "type": "model",
+                    "model": "cps:rmb0"
+                }
+            },
+            {
+                "type": "condition",
+                "property":"keybind_down",
+                "keybind":"key.forward",
+                "on_true": {
+                    "type": "model",
+                    "model": "cps:w1"
+                },
+                "on_false": {
+                    "type": "model",
+                    "model": "cps:w0"
+                }
+            },
+            {
+                "type": "condition",
+                "property":"keybind_down",
+                "keybind":"key.left",
+                "on_true": {
+                    "type": "model",
+                    "model": "cps:a1"
+                },
+                "on_false": {
+                    "type": "model",
+                    "model": "cps:a0"
+                }
+            },
+            {
+                "type": "condition",
+                "property":"keybind_down",
+                "keybind":"key.back",
+                "on_true": {
+                    "type": "model",
+                    "model": "cps:s1"
+                },
+                "on_false": {
+                    "type": "model",
+                    "model": "cps:s0"
+                }
+            },
+            {
+                "type": "condition",
+                "property":"keybind_down",
+                "keybind":"key.right",
+                "on_true": {
+                    "type": "model",
+                    "model": "cps:d1"
+                },
+                "on_false": {
+                    "type": "model",
+                    "model": "cps:d0"
+                }
+            },
+            {
+                "type": "condition",
+                "property":"keybind_down",
+                "keybind":"key.jump",
+                "on_true": {
+                    "type": "model",
+                    "model": "cps:space1"
+                },
+                "on_false": {
+                    "type": "model",
+                    "model": "cps:space0"
+                }
+            }
+        ]
+    }
+}
+
